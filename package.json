@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js"
+    "dev": "npx tsx watch server.js",
+    "postinstall": "prisma skills sync || exit 0"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@sequelize/core": "^7.0.0-alpha.48",
+    "@sequelize/mysql": "^7.0.0-alpha.48",
     "dotenv": "^18.0.9",
     "express": "^5.3.0",
     "multer": "^2.5.0",
@@ -18,10 +21,21 @@
     "sequelize": "^6.37.8"
   },
   "devDependencies": {
+    "@prisma/client": "^7.10.1",
     "@types/express": "^5.0.6",
     "@types/node": "^26.6.6",
+    "prisma": "^8.0.0-rc.33",
     "sequelize-cli": "^6.6.5",
+    "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^7.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nondrack/back-end-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nondrack/back-end-js/issues"
+  },
+  "homepage": "https://github.com/nondrack/back-end-js#readme"
 }

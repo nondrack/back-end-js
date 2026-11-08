@@ -1,4 +1,3 @@
-const { UPDATE } = require("sequelize/lib/query-types");
 const Filme = require("../models/Filme");
 
 const filmeController = {
