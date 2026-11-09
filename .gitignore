@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 node_modules
-=======
 # Dependências
 node_modules/
 
@@ -26,4 +24,3 @@ coverage/
 # Arquivos do sistema operacional
 .DS_Store
 Thumbs.db
->>>>>>> 9d0f7e2fd0b840860d66112e24032ac7f27b8da1
